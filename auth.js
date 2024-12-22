@@ -7,6 +7,7 @@ class auth {
         this.authValidation();
         this.sessionValidation();
         this.timestamp();
+        this.logout();
     }
 
     authValidation() {
@@ -38,6 +39,13 @@ class auth {
             const timestamp = Date.now();
             localStorage.setItem('timestamp', timestamp);
         }, 1 * 1 * 1000);
+    }
+
+    logout() {
+        document.getElementById("auth-logout").addEventListener("click",(e)=>{
+            e.preventDefault();
+            this.redirectToLogin();
+        });
     }
 
     redirectToLogin() {
