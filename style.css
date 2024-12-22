@@ -88,6 +88,28 @@ body {
 .box-info h3 {
     font-size: 20px;
 }
+.topmenu {
+
+}
+.topmenu ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    text-align: right;
+}
+.topmenu ul li {
+    display: inline-block;
+}
+.topmenu ul li a {
+    display: block;
+    color: #5E35B0;
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+    font-weight: bold;
+}
+.topmenu ul li a:hover {
+    color: #369ED9;
+}
 
 /* Form section styling */
 .form-section {
